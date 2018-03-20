@@ -1,0 +1,47 @@
+.tab-nav {
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 100%; 
+  overflow: hidden;
+  box-sizing: border-box;
+  white-space: nowrap;
+  border-bottom: 2rpx solid #ccc;
+  z-index: 10;
+}
+
+.tab-item {
+  margin:0 38rpx;
+  display: inline-block;
+}
+
+.tab-item.active {
+  color: #f65959;
+  position: relative;
+}
+.tab-item.active:after{ 
+  content: "";
+  display: block;
+  height: 5rpx;
+  width: 66rpx;
+  background: #f65959;
+  position: absolute; 
+  bottom: 0;
+}
+
+.tab-list{
+  border-bottom: 2rpx solid #ccc;
+  padding: 20rpx 10rpx;
+  display: flex;
+}
+.image-item{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+}
+.title-item{
+  flex: 1;
+  margin-left: 20rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

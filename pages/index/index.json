@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "model": "/components/model/model"
+  },
+  "enablePullDownRefresh": true
+}

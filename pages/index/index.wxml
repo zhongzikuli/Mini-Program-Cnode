@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <view class="main-container">
+      <scroll-view scroll-x="true" class="tab-nav">
+        <text wx:for="{{section}}" wx:key="tab" id="{{item.tab}}" catchtap="handleTap" class="tab-item {{item.tab == currentTab ? 'active' : ''}}">{{item.name}}</text>
+      </scroll-view>
+
+      <view class="tab-container">
+        <view class="tab-list" wx:for="{{dataList}}" wx:key="{{index}}">
+          <image src="{{item.author.avatar_url}}" class="image-item"></image>
+          <view class="title-item" id="{{item.id}}" catchtap="goToDetail">{{item.title}}</view>
+        </view> 
+      </view>
+    </view>
+  </block>
+</view>

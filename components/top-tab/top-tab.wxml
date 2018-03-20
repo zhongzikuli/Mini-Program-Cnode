@@ -1,0 +1,4 @@
+<!--components/top-tab/top-tab.wxml-->
+<slot name="model"></slot>
+<slot name="like"></slot>
+<slot name="video"></slot>

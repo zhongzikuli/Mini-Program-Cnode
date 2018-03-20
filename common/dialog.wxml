@@ -1,0 +1,10 @@
+<!--common/dialog.wxml-->
+<template name="loadings">
+    <view class="tips {{loading ? 'hide': ''}}">
+        <image src="../../image/loading.gif" mode="aspectFit" />
+        <text>{{loadtxt}}...</text>
+    </view>
+    <loading hidden="{{loading}}">
+        {{loadtxt}}...
+    </loading>
+</template>
